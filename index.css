@@ -6,44 +6,51 @@
 
 #taruni {
   width: 100%;
-  height: 35px;
-  background-color: brown;
+  height: 40px;
+  background-color: purple;
   color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  font-style: initial;
+  font-style: italic;
 }
 
 #navbar {
   width: 100%;
   height: 60px;
-  background-color: white;
-  display: flex;
-  align-items: center;
 }
-#navbar .navbar1 {
+
+.logoimage {
+  text-align: center;
+  font-size: 50px;
+  color: purple;
+  font-style: italic;
+}
+
+#navbar {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 15px;
-  list-style: none;
 }
-#navbar .navbar1 ul {
-  color: black;
-  align-items: center;
+
+ul {
+  float: right;
+  list-style-type: none;
+  gap: 90px;
+  justify-content: center;
+  margin-bottom: 400px;
 }
 
 li {
-  list-style: none;
-  align-items: center;
+  display: inline-block;
+  line-height: 80px;
 }
-li a {
+
+a {
   text-decoration: none;
-  color: black;
-  padding-left: 80px;
-  font-size: 22px;
+  color: purple;
+  font-size: 25px;
+  font-style: italic;
 }
 
 .icon {
@@ -52,20 +59,31 @@ li a {
   flex-wrap: wrap;
   align-items: center;
   padding-left: 200px;
-  font-size: 20px;
-  gap: 30px;
+  font-size: 24px;
+  gap: 20px;
+  color: purple;
+  margin-top: 10px;
+}
+
+#checkbtn {
+  float: right;
+  line-height: 90px;
+  font-size: 30px;
+  display: none;
+}
+
+#check {
+  display: none;
 }
 
 #kurti {
   width: 100%;
-  height: 100vh;
-  display: grid;
-  place-items: center;
+  height: 600px;
 }
 
 .changeimage {
   width: 100%;
-  height: 600px;
+  height: 550px;
   background-image: url("./image/image1.webp");
   background-size: 100% 600px;
   animation-name: myani;
@@ -84,18 +102,16 @@ li a {
 }
 .div1 {
   width: 100%;
-  height: 300px;
   gap: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
-#div1 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+h3 {
+  text-align: center;
 }
 
 .tital {
@@ -106,30 +122,34 @@ li a {
 
 .shop {
   font-size: 25px;
-  padding-left: 34%;
+  text-align: center;
+  font-style: italic;
 }
 
 .shop1 {
   font-size: 25px;
-  padding-left: 35%;
+  text-align: center;
+  font-style: italic;
 }
 
 .shop2 {
   font-size: 25px;
-  padding-left: 36%;
+  text-align: center;
+  font-style: italic;
 }
 
 #dress {
   width: 100%;
-  height: 450px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   align-items: center;
 }
 
 .save {
-  width: 100%;
-  height: 550px;
+  width: 300px;
+  height: 100%;
   display: grid;
   flex-wrap: wrap;
   grid-template-columns: repeat(auto-fill, 300px);
@@ -139,8 +159,9 @@ li a {
 
 #dress1 {
   width: 100%;
-  height: 500px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   padding-left: 40px;
   align-items: center;
@@ -148,22 +169,21 @@ li a {
 
 #bottoms {
   width: 100%;
-  height: 450px;
-  gap: 50px;
+  gap: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .botto {
-  width: 100%;
+  width: 300px;
   height: 400px;
-  display: flex;
 }
 
 #star {
   width: 100%;
-  height: 600px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 600px);
   gap: 40px;
@@ -172,13 +192,67 @@ li a {
 
 .star1 {
   margin-top: 5%;
-  width: 100%;
   height: 550px;
 }
 
 @media (max-width: 450px) {
+  .div1 {
+    width: 100%;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #dress1 {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding-left: 40px;
+    align-items: center;
+  }
+  #star {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    gap: 40px;
+    justify-content: center;
+  }
+  .botto {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #foot1 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #checkbtn {
+    display: block;
+  }
+  .icon {
+    display: none;
+  }
   #navbar {
-    width: 0px;
-    height: 0px;
+    width: 100%;
+    height: 40vh;
+    background-color: navajowhite;
+    display: none;
+    justify-content: center;
+    align-items: center !important;
+  }
+  li {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    margin-left: 35%;
+  }
+  #check:checked ~ nav #navbar {
+    display: block;
   }
 }/*# sourceMappingURL=index.css.map */

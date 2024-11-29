@@ -1,4 +1,4 @@
- 
+
  *{
     margin: 0%;
     padding: 0%;
@@ -6,81 +6,89 @@
 }
 
 // taruni start
+
 #taruni{
-    width: 100%;
-    height: 35px;
-    background-color: brown;
-    color:white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-   font-style: initial;
+   width: 100%;
+   height: 40px;
+   background-color: purple;
+   color:white;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+  font-style:italic;
+}
+#navbar{
+   width: 100%;
+   height: 60px;
 }
 
-// end taruni 
-// nav strat
+.logoimage{
+  text-align: center;
+ font-size: 50px;
+ color:purple;
+  font-style: italic;
+}
 #navbar{
-    width: 100%;
-    height: 60px;
-    background-color:white;
    display: flex;
-   // flex-wrap: wrap;
-   align-items: center;
-   
   
+   justify-content: space-between;
   
-   .navbar1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 15px;
-    list-style: none;
-       ul{
-        
-          color: black;  
-           align-items: center;
-    
-           
-         }
-      }
-   
- }
-  
+}
+ul{
+   float: right;
+   list-style-type: none;
+   gap: 90px;
+//
+  justify-content: center;
+ margin-bottom: 400px;
+}
 li{
-   list-style: none;
-   align-items: center;
+   display: inline-block;
+   line-height: 80px;
+ }
 
-     a{
-        text-decoration: none;
-        color: black;
-       padding-left:80px ;
-       font-size: 22px;
-     }
+a{
+   text-decoration: none;
+   color: purple;
+   font-size: 25px;
+   font-style: italic;
+
+}
      
-     
-   }
-   
    .icon{
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       align-items: center;
    padding-left:200px ;
-      font-size: 20px;
-      gap: 30px;
+      font-size: 24px;
+      gap: 20px;
+      color: purple;
+      margin-top: 10px;
      }
+ 
+   #checkbtn{
+      float: right;
+line-height: 90px;
+font-size: 30px; 
+display: none; 
+ }
+    #check{
+      display: none;
+    }
+    
 // end nav
 #kurti{
    width: 100%;
-   height:100vh ;
-   display: grid;
-   place-items: center;
+   height:600px;
+   // display: grid;
+   // place-items: center;
    
 }
 .changeimage{
    width:100% ;
-   height: 600px;
+   height: 550px;
    background-image: url("./image/image1.webp");
    background-size: 100% 600px;
   animation-name: myani;
@@ -102,21 +110,20 @@ li{
 .div1 {
     
    width: 100%;
-   height: 300px;
+   // height: 300px;
 gap: 50px;
 display: flex;
  flex-wrap: wrap; 
 align-items: center;
 justify-content: space-between;
+margin-top: 20px;
 // padding-bottom: 2%;
 }
   
-
-#div1{
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
+h3{
+  text-align: center; 
 }
+
 
 .tital{
    color:black;
@@ -128,31 +135,38 @@ justify-content: space-between;
 // <!-- heading strat -->
 .shop{
    font-size: 25px;
-   padding-left:34%;
+   // padding-left:34%;
+   text-align: center;
+   font-style: italic;
 }
 .shop1{
    font-size: 25px;
-   padding-left:35%;
+   // padding-left:35%;
+   text-align: center;
+   font-style: italic;
    
 }
 .shop2{
    font-size: 25px;
-   padding-left:36%;
+   // padding-left:36%;
+   text-align: center;
+   font-style: italic;
 }
 // end heading
 // strat box image
 #dress{
    width: 100%;
-   height: 450px;
+   // height: 450px;
    display: flex;
-   // flex-wrap: wrap;
+   flex-wrap: wrap;
+   justify-content: center;
    gap: 30px;
  
    align-items: center;
 }
 .save{
-   width: 100%;
-   height: 550px;
+   width: 300px;
+   height: 100%;
    display: grid;
    flex-wrap: wrap;
    grid-template-columns: repeat(auto-fill,300px);
@@ -164,9 +178,10 @@ justify-content: space-between;
 // strat video
 #dress1{
    width: 100%;
-   height: 500px;
+   // height: 500px;
    display: flex;
-   // flex-wrap: wrap;
+   flex-wrap: wrap;
+   justify-content: center;
    gap: 30px;
   padding-left: 40px;
    align-items: center;
@@ -176,25 +191,26 @@ justify-content: space-between;
 // strat 4box image 
 #bottoms{
    width: 100%;
-   height: 450px;
-   gap: 50px;
+   // height: 450px;
+   gap: 30px;
 display: flex;
 // flex-wrap: wrap;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
 }
 .botto{
-   width: 100%;
+   width: 300px;
    height: 400px;
-   display: flex;
-   // flex-wrap: wrap;
+   
   
 }
 // end 4box image
 // last image strat
 #star{
    width: 100%;
-   height: 600px;
+   // height: 600px;
    display: grid;
    // flex-wrap: wrap;
    grid-template-columns: repeat(auto-fill,600px);
@@ -203,24 +219,104 @@ justify-content: space-between;
 }
 .star1{
    margin-top: 5%;
-   width: 100%;
+   // width: 100%;
    height: 550px;
 }
+
+
 @media(max-width:450px)  {
-   #navbar{
-      width: 0px;
-      height: 0px;
-      // overflow: hidden;
-      // position:absolute;
+  
+   
+   .div1 {
+    
+      width: 100%;
+      // height: 300px;
+   gap: 50px;
+   display: flex;
+   flex-direction: row;
+    flex-wrap: wrap; 
+   align-items: center;
+   justify-content: space-evenly;
+   // padding-bottom: 2%;
+   }
+   #dress1{
+      width: 100%;
+      // height: 500px;
+      display: flex;
+      // flex-wrap: wrap;
+      gap: 30px;
+     padding-left: 40px;
+      align-items: center;
+   }
+
+   #star{
+      width: 100%;
+      // height: 600px;
+      display: grid;
+      // flex-wrap: wrap;
+      grid-template-columns: repeat(auto-fill,350px);
+      gap: 40px;
+      justify-content: center;
+   }
+      .botto{
+         width: 300px;
+         height: 400px;
+         display: flex;
+         flex-wrap: wrap;
+        
+      }
+      #foot1{
+
+         width: 100%;
+         height: 400px;
+         display: flex;
+         flex-wrap: wrap;
+         
+         }
+
+    #checkbtn{
+      display: block;
+    }
+    
+    
+    .icon{
+      display: none;
+    }
+    
+   #navbar {
+      width: 100%;
+      height: 40vh;
+      background-color:navajowhite ;
+      display: none;
+      justify-content: center;
+      align-items: center  !important;
+      
+      }
+      ul{
+         // float: none;
+         // margin-left: 100px;
+      }
+      li{
+         display: block;
+         justify-content: center;
+         align-items: center;
+         line-height: 40px;
+         margin-left: 35%;
+         
+      }
+
+
+      #check:checked~nav #navbar{
+         display: block;
+      }
 
    }
-   // #star{
-   //    width: 100%;
-   //    height: 600px;
-   //    display: grid;
-   //    // flex-wrap: wrap;
-   //    grid-template-columns: 1fr ;
-   //    gap: 40px;
-   // }
+      
    
-}
+
+  
+
+
+
+
+
