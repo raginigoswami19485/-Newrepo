@@ -240,7 +240,7 @@ h3 {
   #navbar {
     width: 100%;
     height: 40vh;
-    background-color: navajowhite;
+    background-color: rgb(253, 189, 92);
     display: none;
     justify-content: center;
     align-items: center !important;
@@ -251,6 +251,7 @@ h3 {
     align-items: center;
     line-height: 40px;
     margin-left: 35%;
+    color: aliceblue;
   }
   #check:checked ~ nav #navbar {
     display: block;
