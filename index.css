@@ -53,12 +53,18 @@ a {
   font-style: italic;
 }
 
+.searchs {
+  font-size: 20px;
+  text-decoration-color: aqua;
+  background-color: rgb(241, 107, 241);
+}
+
 .icon {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 200px;
+  padding: left 30%;
   font-size: 24px;
   gap: 20px;
   color: purple;
@@ -251,7 +257,6 @@ h3 {
     align-items: center;
     line-height: 40px;
     margin-left: 35%;
-    color: aliceblue;
   }
   #check:checked ~ nav #navbar {
     display: block;
